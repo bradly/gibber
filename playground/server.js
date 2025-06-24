@@ -11,7 +11,10 @@ const WebSocket         = require( 'ws' ),
 
 require( 'dotenv' ).config()
 
-app.use( cors() )
+app.use(cors({
+  origin: ['https://birdymusic.com'],
+  credentials: true
+}))
 
 app.use( express.static( './', { 
   setHeaders: function(res, path) {

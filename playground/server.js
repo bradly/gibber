@@ -52,4 +52,4 @@ wss.on('connection', (conn, req) => {
 
 app.listen( port )
 
-console.log(`Listening to http://localhost:${port} ${production ? '(production)' : ''}`)
+console.log(`Listening to http://0.0.0.0:${port} ${production ? '(production)' : ''}`)
